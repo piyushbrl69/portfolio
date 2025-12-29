@@ -4,14 +4,14 @@ export default function Socials() {
   const socialLinks = [
     {
       name: "GitHub",
-      username: "@piyushbrl",
+      username: "@piyushbrl69",
       url: "https://github.com/piyushbrl69",
       color: "hover:text-white",
       description: "View my repositories and project here.",
     },
     {
       name: "LinkedIn",
-      username: "piyushbrl69",
+      username: "piyushbrl",
       url: "https://linkedin.com/in/piyushbrl",
       color: "hover:text-blue-400",
       description: "Let’s connect professionally and discuss opportunities.",
