@@ -1,64 +1,100 @@
-import Image from "next/image";
+import Navbar from "./components/Navbar";
+import ProjectCard from "./components/ProjectCard";
+import { projects } from "./data/projects";
+import { skills } from "./data/skills";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <div className="min-h-screen bg-[#09090b] text-white">
+      <Navbar />
+
+      <main className="max-w-5xl mx-auto px-6 pt-32 pb-20">
+        <section className="pt-32 pb-20 min-h-[70vh] flex items-start justify-center">
+          <div className="w-full flex flex-col md:flex-row justify-between items-start gap-10">
+            <div className="flex-1">
+              <h1 className="text-6xl md:text-8xl font-black tracking-tighter mb-8 leading-[0.85] text-white">
+                Hi, <br />
+                <span className="text-zinc-800">I’m Piyush</span>
+              </h1>
+              <p className="max-w-xl text-lg md:text-xl text-zinc-400 font-medium leading-relaxed">
+                A Frontend Developer building clean and responsive web
+                experiences.Currently learning by building real projects..
+              </p>
+            </div>
+            <div className="flex flex-col gap-4 w-full md:w-64">
+              <a
+                href="#projects"
+                className="group w-full flex items-center justify-between px-6 py-5 rounded-2xl bg-white text-black font-bold hover:bg-zinc-200 transition-all text-xs uppercase tracking-[0.2em]"
+              >
+                <span>Projects</span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="3"
+                  className="group-hover:rotate-45 transition-transform"
+                >
+                  <path d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+              </a>
+
+              <a
+                href="#skills"
+                className="group w-full flex items-center justify-between px-6 py-5 rounded-2xl border border-zinc-800 bg-zinc-950 text-white font-bold hover:bg-zinc-900 transition-all text-xs uppercase tracking-[0.2em]"
+              >
+                <span>Skills</span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="3"
+                  className="group-hover:translate-y-1 transition-transform"
+                >
+                  <path d="M19 14l-7 7-7-7M12 21V3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-32" id="skills">
+          <br></br>
+          <br />
+          <br />
+          <br />
+          <h2 className="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.3em] mb-10 ">
+            Capabilities
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {skills.map((skill) => (
+              <div
+                key={skill.name}
+                className="p-6 rounded-2xl bg-zinc-900/50 border border-zinc-800 hover:border-zinc-500 transition-all cursor-default"
+              >
+                <h3 className="font-bold text-zinc-100 text-lg">
+                  {skill.name}
+                </h3>
+                <p className="text-[10px] text-zinc-500 mt-1 uppercase tracking-widest">
+                  {skill.level}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+        <section id="projects">
+          <h2 className="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.3em] mb-10">
+            Selected Work
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {projects.map((project) => (
+              <ProjectCard key={project.title} project={project} />
+            ))}
+          </div>
+        </section>
       </main>
     </div>
   );
