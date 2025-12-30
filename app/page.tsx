@@ -96,6 +96,11 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <footer className="mt-20 mb-10 pt-8 border-t border-zinc-900 text-center">
+        <p className="text-xs font-mono text-zinc-600 uppercase tracking-widest">
+          © 2025 Piyush Burnwal · Frontend Developer
+        </p>
+      </footer>
     </div>
   );
 }
