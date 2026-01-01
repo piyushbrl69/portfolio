@@ -25,7 +25,7 @@ export default function Socials() {
     },
     {
       name: "Email",
-      username: "Piyush Burnwal",
+      username: "piyushbrl100@gmail.com",
       url: "piyushbrl100@gmail.com",
       color: "hover:text-emerald-400",
       description: "The best way to reach me for direct inquiries.",

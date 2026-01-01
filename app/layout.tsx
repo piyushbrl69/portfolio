@@ -6,6 +6,10 @@ export const metadata = {
   title: "Piyush Burnwal | Portfolio",
   description:
     "My personal portfolio highlighting frontend projects built while learning React and Next.js.",
+
+  verification: {
+    google: "tIYX7I7NY-w94obHjXrmnz0acAhZspuEl8FdWhf6bDU",
+  },
 };
 export default function RootLayout({
   children,
