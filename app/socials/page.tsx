@@ -25,8 +25,8 @@ export default function Socials() {
     },
     {
       name: "Email",
-      username: "piyushbrl100@gmail.com",
-      url: "piyushbrl100@gmail.com",
+      username: "Piyush Burnwal",
+      url: "mailto:piyushbrl100@gmail.com&subject=Want%20to%20connect%20with%20you&body=Hey%20Piyush,%20I%20really%20like%20your%20portfolio%20and%20want%20to%20connect%20with%20you",
       color: "hover:text-emerald-400",
       description: "The best way to reach me for direct inquiries.",
     },

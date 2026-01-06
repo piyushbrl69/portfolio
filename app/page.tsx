@@ -1,3 +1,4 @@
+import About from "./components/About";
 import Navbar from "./components/Navbar";
 import ProjectCard from "./components/ProjectCard";
 import { projects } from "./data/projects";
@@ -9,7 +10,7 @@ export default function Home() {
       <Navbar />
 
       <main className="max-w-5xl mx-auto px-6 pt-32 pb-20">
-        <section className="pt-32 pb-20 min-h-[70vh] flex items-start justify-center">
+        <section className="pt-32 pb-20 h-screen flex items-start justify-center">
           <div className="w-full flex flex-col md:flex-row justify-between items-start gap-10">
             <div className="flex-1">
               <h1 className="text-6xl md:text-8xl font-black tracking-tighter mb-8 leading-[0.85] text-white">
@@ -60,6 +61,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <About />
 
         <section className="mb-32" id="skills">
           <br></br>
