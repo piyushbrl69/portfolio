@@ -100,7 +100,10 @@ export default function Home() {
       </main>
       <footer className="mt-20 mb-10 pt-8 border-t border-zinc-900 text-center">
         <p className="text-xs font-mono text-zinc-600 uppercase tracking-widest">
-          © 2025 Piyush Burnwal · Frontend Developer
+          © 2025 Piyush Burnwal · Frontend Developer{" "}
+          <a href="/socials" className="text-white underline">
+            social handles
+          </a>
         </p>
       </footer>
     </div>

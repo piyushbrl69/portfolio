@@ -24,9 +24,16 @@ export const projects = [
     tech: ["JavaScript", "CSS", "HTML"]
   },
   {
+    title: "Scam Sense",
+    description: "Identify and report online scams with Scam Sense. Learn cyber safety, fraud prevention, and protect yourself from digital fraud.",
+    link: "https://scam-sense-web.vercel.app",
+    tech: ["Next.js", "Tailwind", "Typescript"]
+  },
+  {
     title: "Fraud Guard",
     description: "A one stop destination for any fraud/scam Help(on development)",
     link: "https://github.com/piyushbrl69/fraud-guard",
     tech: ["Next.js", "Tailwind", "Typescript"]
   },
+  
 ];
