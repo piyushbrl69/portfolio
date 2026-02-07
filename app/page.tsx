@@ -19,7 +19,7 @@ export default function Home() {
               </h1>
               <p className="max-w-xl text-lg md:text-xl text-zinc-400 font-medium leading-relaxed">
                 A Frontend Developer building clean and responsive web
-                experiences.Currently learning by building real projects..
+                experiences.Currently learning by building real projects.
               </p>
             </div>
             <div className="flex flex-col gap-4 w-full md:w-64">
