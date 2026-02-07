@@ -24,13 +24,14 @@ export default function Navbar() {
           >
             Socials
           </Link>
-          <Link
-            href="https://github.com/piyushbrl69"
+          <a
+            href="/resume_PiyushBurnwal.pdf"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-zinc-400 hover:text-white transition-colors border border-zinc-800 px-3 py-1 rounded-full hover:bg-zinc-900"
           >
-            Github
-          </Link>
+            Resume
+          </a>
         </div>
       </div>
     </nav>
